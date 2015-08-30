@@ -1,0 +1,16 @@
+<ion-view view-title="Horários dos Filmes">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate" ng-repeat="filme in filmes" type="item-text-wrap">
+        <h2>{{ filme.filme }}</h2>
+        <p>Segunda: <span ng-repeat="hora in filme.segunda">{{ hora }} </span></p>
+        <p>Terça: <span ng-repeat="hora in filme.terca">{{ hora }} </span></p>
+        <p>Qaurta: <span ng-repeat="hora in filme.quarta">{{ hora }} </span></p>
+        <p>Quinta: <span ng-repeat="hora in filme.quinta">{{ hora }} </span></p>
+        <p>Sexta: <span ng-repeat="hora in filme.sexta">{{ hora }} </span></p>
+        <p>Sábado: <span ng-repeat="hora in filme.sabado">{{ hora }} </span></p>
+        <p>Domingo: <span ng-repeat="hora in filme.domingo">{{ hora }} </span></p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
