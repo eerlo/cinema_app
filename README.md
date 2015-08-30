@@ -1,2 +1,3 @@
 # cinema_app
-The web app to get the movies schedules.
+
+The Ionic Framework(http://ionicframework.com/) mobile app to get the movies schedules.
