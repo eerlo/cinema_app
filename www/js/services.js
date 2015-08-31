@@ -4,9 +4,9 @@ angular.module('starter.services', [])
   var URL = 'http://cinemas-eerlo.rhcloud.com/api/v1/filmes/';
   return {
     all: function() {
-      return $http.get(URL).success(function(response) {
-        return response;
-      });
+      return $http({method: 'GET',
+                    url: URL,
+                    dataType: 'json'});
     }
   };
 });
